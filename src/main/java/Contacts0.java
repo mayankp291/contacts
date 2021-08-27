@@ -3,12 +3,12 @@ import java.util.Scanner;
 
 public class Contacts0 {
 
-    public static final int MAX = 100;
+    public static final int MAX_VALUE = 100;
 
     public static void main(String[] args) {
         final Scanner SCANNER = new Scanner(System.in);
         welcomeMessage();
-        String[][] list = new String[MAX][3];
+        String[][] list = new String[MAX_VALUE][3];
         int count = 0;
         while (true) {
             System.out.print("|| " + "Enter command: ");
@@ -17,6 +17,7 @@ public class Contacts0 {
                 inputLine = SCANNER.nextLine();
             }
             String userCommand = inputLine;
+
             System.out.println("|| [Command entered:" + userCommand + "]");
             String feedback;
             final String[] split = userCommand.trim().split("\\s+", 2);
